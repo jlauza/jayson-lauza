@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:filter-[invert(1)]"
-          src="/pronetsuite-light.png"
+          src="/netlauza.png"
           alt="Next.js logo"
           width={180}
           height={38}
