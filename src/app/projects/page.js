@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import GlobalFooter from "../components/global-footer";
 
 const ProjectsPage = () => {
   return (
@@ -71,6 +72,7 @@ const ProjectsPage = () => {
           </div>
         </div>
       </main>
+      <GlobalFooter />
     </div>
   );
 };
