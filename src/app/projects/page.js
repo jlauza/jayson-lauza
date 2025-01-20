@@ -22,13 +22,13 @@ const ProjectsPage = () => {
       title: "Pro Dance Suite",
       description:
         "This software is intended for dance studios to manage their class bookings, private lessons, and events. A complete tool for dance studio owners.",
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://placehold.co/600x400?text=No+Thumbnail",
     },
     {
       title: "Pro Dance Suite Mobile",
       description:
         "This software is intended for dance studios to manage their class bookings, private lessons, and events. A complete tool for dance studio owners.",
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://placehold.co/600x400?text=No+Thumbnail",
     },
   ];
 
