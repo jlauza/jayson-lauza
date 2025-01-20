@@ -40,7 +40,7 @@ const GlobalFooter = () => {
         rel="noopener noreferrer"
       >
         <EnvelopeClosedIcon />
-        Contact Us
+        Contact
       </a>
     </footer>
   );

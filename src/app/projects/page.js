@@ -30,7 +30,7 @@ const ProjectsPage = () => {
         <div className="flex flex-col items-center gap-2">
           <div className="border border-gray-300 rounded p-4 flex flex-col sm:flex-row gap-4 items-center">
             <img
-              src="https://via.placeholder.com/100"
+              src="https://placehold.co/600x400"
               alt="Thumbnail"
               className="w-24 h-24 object-cover rounded"
             />
@@ -52,7 +52,7 @@ const ProjectsPage = () => {
 
           <div className="border border-gray-300 rounded p-4 flex flex-col sm:flex-row gap-4 items-center">
             <img
-              src="https://via.placeholder.com/100"
+              src="https://placehold.co/600x400"
               alt="Thumbnail"
               className="w-24 h-24 object-cover rounded"
             />
