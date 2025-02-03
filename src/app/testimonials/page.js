@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import GlobalFooter from "../components/global-footer";
+import GlobalFooter from "../components/global/footer";
 
 const TestimonialsPage = () => {
   const pagetitle = "Testimonials";

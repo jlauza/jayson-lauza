@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import GlobalFooter from "../components/global-footer"; // Make sure to adjust the import path
+import GlobalFooter from "../components/global/footer"; // Make sure to adjust the import path
 
 const ProjectFullDescription = ({ project, onClose }) => {
   return (
