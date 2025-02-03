@@ -1,57 +1,55 @@
-import Image from "next/image";
-import Link from "next/link";
-import {
-  DoubleArrowRightIcon,
-  EnvelopeClosedIcon,
-} from "@radix-ui/react-icons";
-import GlobalFooter from "./components/global-footer";
+"use client";
+
+import Navigation from "./components/global/navigation";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:filter-[invert(1)]"
-          src="/netlauza.png"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            This website is intented to display the project collections
-          </li>
-          <li className="mb-2">Creator of this site is Jayson Lauza</li>
-          <li className="mb-2">
-            See the author's{" "}
-            <Link href="https://github.com/jlauza" target="_blank">
-              GitHub profile <DoubleArrowRightIcon className="inline" />
-            </Link>
-          </li>
-        </ol>
+    <div className="bg-white">
+      <Navigation />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-primary text-foreground gap-2 hover:bg-secondary dark:hover:bg-secondary text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="/projects"
-            rel="noopener noreferrer"
-          >
-            Explore Projects
-            <DoubleArrowRightIcon className="inline" />
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#cecece] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <EnvelopeClosedIcon className="inline mr-2" /> Contact Us
-          </a>
+      <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-32 sm:py-48 lg:py-56">
+          {/* Content Section */}
+          <div className="order-1 lg:order-none">
+            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+              <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                Announcing our next round of funding.
+                <a href="#" className="font-semibold text-indigo-600">
+                  <span aria-hidden="true" className="absolute inset-0" />
+                  Read more <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+              Data to enrich your online business
+            </h1>
+            <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl/8">
+              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+            </p>
+            <div className="mt-10 flex items-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </a>
+              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Image First on Small Screens, Left on Large Screens */}
+          <div className="flex items-center justify-center">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Placeholder Image"
+              className="w-full max-w-md rounded-lg shadow-lg"
+            />
+          </div>
         </div>
-      </main>
-      {/* Footer location */}
-      <GlobalFooter />
+      </div>
     </div>
   );
 }
