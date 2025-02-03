@@ -12,8 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NetLauza Digital",
-  description: "A collection of projects posted by Jayson Lauza",
+  title: "LauzaTech",
+  description:
+    "We offer services that help your business grow and move effeciently.",
 };
 
 export default function RootLayout({ children }) {
