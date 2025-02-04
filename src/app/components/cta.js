@@ -1,6 +1,6 @@
 const CTA = () => {
   return (
-    <div className="bg-indigo-600 text-white py-12 px-6 text-center">
+    <div className="bg-indigo-600 text-white py-40 px-6 text-center">
       <h2 className="text-3xl font-bold sm:text-4xl">
         Ready to take your business to the next level?
       </h2>

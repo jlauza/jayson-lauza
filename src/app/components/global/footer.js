@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-400">
@@ -5,9 +8,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo & Description */}
           <div>
-            <h2 className="text-2xl font-semibold text-white">YourBrand</h2>
+            {/* <h2 className="text-2xl font-semibold text-white">LauzaTech</h2> */}
+            <Image
+              alt="Logo"
+              src="/logo-white.png"
+              className="h-6 w-auto"
+              width={392}
+              height={69}
+            />
             <p className="mt-4 text-sm">
-              Building innovative solutions for the digital world.
+              Helping business grow with seamless ERP solutions.
             </p>
           </div>
 
@@ -78,7 +88,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-10 border-t border-gray-700 pt-6 text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} YourBrand. All rights reserved.
+            &copy; {new Date().getFullYear()} LauzaTech. All rights reserved.
           </p>
         </div>
       </div>

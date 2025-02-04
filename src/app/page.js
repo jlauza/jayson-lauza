@@ -1,19 +1,19 @@
 "use client";
 
 import Footer from "./components/global/footer";
-import Header from "./components/global/header";
+import Navigation from "./components/global/navigation";
 import Carousel from "./components/carousel";
 import Products from "./components/products";
 import Testimonials from "./components/testimonials";
 import CTA from "./components/cta";
 import Services from "./components/services";
+import Brands from "./components/brands";
 
 export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <Header />
-
+        <Navigation />
         {/* Hero */}
         <div id="hero" className="relative isolate px-4 pt-10 lg:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-25 sm:py-48 lg:py-45">
@@ -50,21 +50,19 @@ export default function Home() {
 
             {/* Image First on Small Screens, Left on Large Screens */}
             <div className="flex items-center justify-center">
-              {/* <img
-              src="https://via.placeholder.com/600x400"
-              alt="Placeholder Image"
-              className="w-full max-w-md rounded-lg shadow-lg"
-            /> */}
               <Carousel />
             </div>
           </div>
         </div>
 
-        {/* Features */}
+        {/* Services */}
         <Services />
 
         {/* Products */}
         <Products />
+
+        {/* Brands */}
+        <Brands />
 
         {/* Testimonials */}
         <Testimonials />
