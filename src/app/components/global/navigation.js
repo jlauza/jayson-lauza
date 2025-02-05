@@ -217,10 +217,6 @@ export default function Navigation() {
               </div>
             </PopoverPanel>
           </Popover>
-
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Features
-          </a>
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Contact Sales
           </a>
