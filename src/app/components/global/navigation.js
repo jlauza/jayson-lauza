@@ -217,7 +217,10 @@ export default function Navigation() {
               </div>
             </PopoverPanel>
           </Popover>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a
+            href="/contact-sales"
+            className="text-sm/6 font-semibold text-gray-900"
+          >
             Contact Sales
           </a>
         </PopoverGroup>
