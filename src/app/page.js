@@ -34,15 +34,17 @@ export default function Home() {
                 solutions
               </h1>
               <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl/8">
-                Empower your business with cutting-edge ERP solutions designed
+                {/* Empower your business with cutting-edge ERP solutions designed
                 to streamline operations, enhance productivity, and drive
                 sustainable growth. Simplify workflows, improve collaboration,
-                and scale effortlessly with our seamless technology.
+                and scale effortlessly with our seamless technology. */}
+                Empowering small businesses with powerful SaaS solutions
+                designed for growth and efficiency.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="hover:shadow-xl hover:scale-105 transition transform rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
                 </a>

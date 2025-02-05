@@ -8,7 +8,7 @@ export default function Products() {
         Browse through our collection of high-quality products tailored for you.
       </p>
       <div className="mt-6">
-        <button className="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-indigo-500 transition">
+        <button className="bg-indigo-600 inline-block text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition transform">
           View Products
         </button>
       </div>

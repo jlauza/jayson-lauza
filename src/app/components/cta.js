@@ -10,7 +10,7 @@ const CTA = () => {
           href="#"
           className="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 hover:bg-gray-200 transition transform"
         >
-          Get Started
+          Explore Our Solutions
         </a>
       </div>
     </div>
