@@ -84,7 +84,7 @@ export default function Navigation() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">LauzaTech</span>
             <Image
               alt="Logo"
@@ -106,6 +106,9 @@ export default function Navigation() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+          <a href="/" className="text-sm/6 font-semibold text-gray-900">
+            Home
+          </a>
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
               Product
