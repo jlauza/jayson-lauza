@@ -15,8 +15,8 @@ export default function Home() {
       <div className="bg-white">
         <Navigation />
         {/* Hero */}
-        <div id="hero" className="relative isolate px-4 pt-10 lg:px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-25 sm:py-48 lg:py-45">
+        <div id="hero" className="relative isolate px-4 pt-6 lg:px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-16 sm:py-24 lg:py-28">
             {/* Content Section */}
             <div className="order-1 lg:order-none">
               <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -29,11 +29,15 @@ export default function Home() {
                 </div>
               </div>
               <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-                Data to enrich your online business
+                Helping business <span className="text-indigo-600">grow</span>{" "}
+                with <span className="text-indigo-600">seamless</span> ERP
+                solutions
               </h1>
               <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl/8">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+                Empower your business with cutting-edge ERP solutions designed
+                to streamline operations, enhance productivity, and drive
+                sustainable growth. Simplify workflows, improve collaboration,
+                and scale effortlessly with our seamless technology.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a

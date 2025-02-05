@@ -131,7 +131,7 @@ export default function Navigation() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
               Product
               <ChevronDownIcon
                 aria-hidden="true"
@@ -187,7 +187,7 @@ export default function Navigation() {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
               Services
               <ChevronDownIcon
                 aria-hidden="true"
