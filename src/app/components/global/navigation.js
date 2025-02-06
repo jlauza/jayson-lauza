@@ -38,7 +38,7 @@ const products = [
 ];
 const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
+  { name: "Contact sales", href: "/contact-sales", icon: PhoneIcon },
 ];
 
 const services = [
