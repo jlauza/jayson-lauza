@@ -45,7 +45,7 @@ export default function Home() {
                 href="#"
                 className="hover:shadow-xl hover:scale-105 transition transform rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Our Solutions
+                Get Started
               </a>
               <a href="#" className="text-sm/6 font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
