@@ -109,9 +109,12 @@ export default function Navigation() {
           <a href="/" className="text-sm/6 font-semibold text-gray-900">
             Home
           </a>
+          <a href="/about" className="text-sm/6 font-semibold text-gray-900">
+            About Us
+          </a>
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
-              Product
+              Our Solutions
               <ChevronDownIcon
                 aria-hidden="true"
                 className="size-5 flex-none text-gray-400"
@@ -167,7 +170,7 @@ export default function Navigation() {
 
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
-              Services
+              Our Services
               <ChevronDownIcon
                 aria-hidden="true"
                 className="size-5 flex-none text-gray-400"
