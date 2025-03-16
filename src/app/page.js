@@ -29,8 +29,8 @@ export default function Home() {
             </div>
             <h1 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               Helping business <span className="text-indigo-600">grow</span>{" "}
-              with <span className="text-indigo-600">seamless</span> ERP
-              solutions
+              with <span className="text-indigo-600">seamless</span> business
+              software solutions
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl/8">
               {/* Empower your business with cutting-edge ERP solutions designed
