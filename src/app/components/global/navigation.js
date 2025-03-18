@@ -43,32 +43,32 @@ const callsToAction = [
 
 const services = [
   {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
+    name: "Business Website",
+    description: "A custom build website for your business",
     href: "#",
     icon: ChartPieIcon,
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers",
+    name: "WordPress Website",
+    description: "Any industry website ran in WordPress",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
+  // {
+  //   name: "Security",
+  //   description: "Your customers’ data will be safe and secure",
+  //   href: "#",
+  //   icon: FingerPrintIcon,
+  // },
   {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
+    name: "Business Software",
+    description: "Complex solutions for your business",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
+    name: "Custom Build Website",
+    description: "A custom build website of your specifics",
     href: "#",
     icon: ArrowPathIcon,
   },
