@@ -8,6 +8,7 @@ import Testimonials from "./components/testimonials";
 import CTA from "./components/cta";
 import Services from "./components/services";
 import Brands from "./components/brands";
+import Solutions from "./components/solutions";
 
 export default function Home() {
   return (
@@ -61,7 +62,10 @@ export default function Home() {
       </div>
 
       {/* Brands */}
-      <Brands />
+      {/* <Brands /> */}
+      
+      {/* Solutions */}
+      <Solutions />
 
       {/* Services */}
       <Services />
