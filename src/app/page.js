@@ -13,7 +13,7 @@ import Solutions from "./components/solutions";
 export default function Home() {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       {/* Hero */}
       <div id="hero" className="relative isolate px-4 pt-6 lg:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-16 sm:py-24 lg:py-28">
@@ -63,7 +63,7 @@ export default function Home() {
 
       {/* Brands */}
       {/* <Brands /> */}
-      
+
       {/* Solutions */}
       <Solutions />
 
