@@ -5,8 +5,19 @@ export default function Solutions() {
         About Our Solutions
       </h1>
       <p className="mt-4 text-lg text-gray-600">
-        We provide business-driven solutions to address every business specific needs.
+        Unlock Your Business's Growth Potential with a High-Converting Website.
       </p>
+
+      <div className="sm:w-lg w-full">
+        <p className="mt-4 text-lg text-gray-600">
+          Every business is unique, and so are its goals. That's why we create
+          custom website solutions that are more than just a digital
+          presence—they're a powerful engine for growth. By focusing on your
+          business's specific needs, we build a strategic foundation that helps
+          you attract new customers, increase conversions, and scale your
+          business with confidence.
+        </p>
+      </div>
     </div>
   );
 }

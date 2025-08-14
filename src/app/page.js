@@ -29,17 +29,15 @@ export default function Home() {
               </div>
             </div>
             <h1 className="text-5xl font-semibold capitalize tracking-tight text-gray-900 sm:text-7xl">
-              Helping business <span className="text-indigo-600">grow</span>{" "}
-              with <span className="text-indigo-600">seamless</span> website
-              solutions
+              Your Business Needs a<br />
+              <span className="text-indigo-600">
+                Website That
+              </span> Actually <span className="text-indigo-600">Works</span>.{" "}
             </h1>
             <p className="mt-8 text-lg font-medium text-gray-500 sm:text-xl/8">
-              {/* Empower your business with cutting-edge ERP solutions designed
-                to streamline operations, enhance productivity, and drive
-                sustainable growth. Simplify workflows, improve collaboration,
-                and scale effortlessly with our seamless technology. */}
-              Empowering small businesses with powerful business website
-              solutions designed for growth and efficiency.
+              From seamless user experience to lead-generating forms, we build
+              custom websites that grow with you, ensuring a powerful return on
+              your investment.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
               <a
