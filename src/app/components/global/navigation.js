@@ -77,7 +77,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gray-900/90 backdrop-blur-sm fixed w-full z-50">
+    <header className="backdrop-blur-sm fixed w-full z-50">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-full items-center justify-between p-6"

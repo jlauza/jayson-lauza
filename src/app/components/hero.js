@@ -8,7 +8,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
