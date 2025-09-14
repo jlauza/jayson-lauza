@@ -16,9 +16,10 @@ export default function Home() {
     <>
       <Navigation />
       {/* Hero */}
-      <div id="hero" className="relative isolate px-4 pt-6 lg:px-4">
+      <Hero />
+
+      {/* <div id="hero" className="relative isolate px-4 pt-6 lg:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-16 sm:py-24 lg:py-28">
-          {/* Content Section */}
           <div className="order-1 lg:order-none">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -52,13 +53,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          {/* Image First on Small Screens, Left on Large Screens */}
-          <div className="flex items-center justify-center">
-            <Carousel />
-          </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Brands */}
       {/* <Brands /> */}

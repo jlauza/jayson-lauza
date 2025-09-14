@@ -77,7 +77,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="bg-gray-900/90 backdrop-blur-sm fixed w-full z-50">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-6"
@@ -105,15 +105,15 @@ export default function Navigation() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm/6 font-semibold text-gray-900">
+          <a href="/" className="text-sm/6 font-semibold text-white">
             Home
           </a>
-          <a href="/about" className="text-sm/6 font-semibold text-gray-900">
+          <a href="/about" className="text-sm/6 font-semibold text-white">
             About Us
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-white focus:outline-none focus:ring-0">
               Our Services
               <ChevronDownIcon
                 aria-hidden="true"
@@ -140,7 +140,7 @@ export default function Navigation() {
                     <div className="flex-auto">
                       <a
                         href={item.href}
-                        className="block font-semibold text-gray-900"
+                        className="block font-semibold text-white"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
@@ -155,7 +155,7 @@ export default function Navigation() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-100"
                   >
                     <item.icon
                       aria-hidden="true"
@@ -169,13 +169,13 @@ export default function Navigation() {
           </Popover>
           <a
             href="/contact-sales"
-            className="text-sm/6 font-semibold text-gray-900"
+            className="text-sm/6 font-semibold text-white"
           >
             Contact Us
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="#" className="text-sm/6 font-semibold text-white">
             Get a Quote <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -212,18 +212,18 @@ export default function Navigation() {
               <div className="space-y-2 py-6">
                 <a
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
                 >
                   Home
                 </a>
                 <a
                   href="/about"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
                 >
                   About Us
                 </a>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-gray-50">
                     Services
                     <ChevronDownIcon
                       aria-hidden="true"
@@ -236,7 +236,7 @@ export default function Navigation() {
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-gray-50"
                       >
                         {item.name}
                       </DisclosureButton>
@@ -246,13 +246,13 @@ export default function Navigation() {
 
                 {/* <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
                 >
                   Testimonails
                 </a> */}
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50"
                 >
                   Contact Us
                 </a>
@@ -260,7 +260,7 @@ export default function Navigation() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-50"
                 >
                   Get A Quote
                 </a>
