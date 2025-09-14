@@ -21,11 +21,11 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { CgWebsite } from "react-icons/cg";
+import { CiMobile4 } from "react-icons/ci";
+import { MdOutlineRequestQuote } from "react-icons/md";
+import { CiMail } from "react-icons/ci";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 const products = [
@@ -36,41 +36,40 @@ const products = [
     icon: ChartPieIcon,
   },
 ];
+
 const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "/contact-sales", icon: PhoneIcon },
+  { name: "Get A Quote", href: "#", icon: MdOutlineRequestQuote },
+  { name: "Contact sales", href: "/contact-sales", icon: CiMail },
 ];
 
 const services = [
   {
-    name: "Business Website",
-    description: "A custom build website for your business",
+    name: "Website Development",
+    description:
+      "A custom business website built for your needs built under WordPress",
     href: "#",
-    icon: ChartPieIcon,
+    icon: CgWebsite,
   },
   {
-    name: "WordPress Website",
-    description: "Any industry website ran in WordPress",
+    name: "Website Hosting",
+    description:
+      "Hosting and administration of your website with technical support",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
-  // {
-  //   name: "Security",
-  //   description: "Your customers’ data will be safe and secure",
-  //   href: "#",
-  //   icon: FingerPrintIcon,
-  // },
   {
-    name: "Business Software",
-    description: "Complex solutions for your business",
+    name: "Saas Development",
+    description:
+      "Custom software solutions to streamline your business processes",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Custom Build Website",
-    description: "A custom build website of your specifics",
+    name: "Mobile App Development",
+    description:
+      "A user-friendly mobile app to engage your customers in the palm of their hand",
     href: "#",
-    icon: ArrowPathIcon,
+    icon: CiMobile4,
   },
 ];
 
@@ -85,7 +84,7 @@ export default function Navigation() {
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">LauzaTech</span>
+            <span className="sr-only">InitiaDev</span>
             <Image
               alt="Logo"
               src="/logo.png"
@@ -112,61 +111,6 @@ export default function Navigation() {
           <a href="/about" className="text-sm/6 font-semibold text-gray-900">
             About Us
           </a>
-          <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
-              Our Solutions
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="size-5 flex-none text-gray-400"
-              />
-            </PopoverButton>
-
-            <PopoverPanel
-              transition
-              className="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
-            >
-              <div className="p-4">
-                {products.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
-                  >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <item.icon
-                        aria-hidden="true"
-                        className="size-6 text-gray-600 group-hover:text-indigo-600"
-                      />
-                    </div>
-                    <div className="flex-auto">
-                      <a
-                        href={item.href}
-                        className="block font-semibold text-gray-900"
-                      >
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                {callsToAction.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <item.icon
-                      aria-hidden="true"
-                      className="size-5 flex-none text-gray-400"
-                    />
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </PopoverPanel>
-          </Popover>
 
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 focus:outline-none focus:ring-0">
@@ -227,12 +171,12 @@ export default function Navigation() {
             href="/contact-sales"
             className="text-sm/6 font-semibold text-gray-900"
           >
-            Contact Sales
+            Contact Us
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Get a Quote <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -245,7 +189,7 @@ export default function Navigation() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">LauzaTech</span>
+              <span className="sr-only">InitiaDev</span>
               <Image
                 alt="Logo"
                 src="/logo.png"
@@ -266,16 +210,28 @@ export default function Navigation() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
+                <a
+                  href="/"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Home
+                </a>
+                <a
+                  href="/about"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  About Us
+                </a>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Product
+                    Services
                     <ChevronDownIcon
                       aria-hidden="true"
                       className="size-5 flex-none group-data-open:rotate-180"
                     />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
+                    {[...services].map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"
@@ -288,44 +244,17 @@ export default function Navigation() {
                   </DisclosurePanel>
                 </Disclosure>
 
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Services
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="size-5 flex-none group-data-open:rotate-180"
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...services, ...callsToAction].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
+                {/* <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Testimonails
+                </a> */}
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Company
+                  Contact Us
                 </a>
               </div>
               <div className="py-6">
@@ -333,7 +262,7 @@ export default function Navigation() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Get A Quote
                 </a>
               </div>
             </div>

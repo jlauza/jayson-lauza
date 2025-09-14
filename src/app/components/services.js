@@ -28,7 +28,7 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-gray-100 py-60 px-6 text-center">
+    <div className="bg-white-100 py-60 px-6 text-center">
       <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
         Our Services
       </h1>

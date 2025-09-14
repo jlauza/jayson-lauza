@@ -1,6 +1,6 @@
 export default function Solutions() {
   return (
-    <div className="bg-gray-100 py-60 px-6 text-center">
+    <div className="bg-gray-100 py-40 px-6 text-center">
       <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
         About Our Solutions
       </h1>
@@ -8,7 +8,7 @@ export default function Solutions() {
         Unlock Your Business's Growth Potential with a High-Converting Website.
       </p>
 
-      <div className="sm:w-lg w-full">
+      <div className="w-full sm:w-1/2 m-auto">
         <p className="mt-4 text-lg text-gray-600">
           Every business is unique, and so are its goals. That's why we create
           custom website solutions that are more than just a digital

@@ -9,6 +9,7 @@ import CTA from "./components/cta";
 import Services from "./components/services";
 import Brands from "./components/brands";
 import Solutions from "./components/solutions";
+import Hero from "./components/hero";
 
 export default function Home() {
   return (
