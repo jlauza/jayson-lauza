@@ -87,7 +87,7 @@ export default function Navigation() {
             <span className="sr-only">InitiaDev</span>
             <Image
               alt="Logo"
-              src="/logo.png"
+              src="/logo-white.png"
               className="h-5 w-auto"
               width={1001}
               height={150}
