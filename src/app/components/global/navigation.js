@@ -105,15 +105,21 @@ export default function Navigation() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-sm/6 font-semibold text-white">
+          <a
+            href="/"
+            className="text-sm/6 font-semibold text-white hover:text-yellow-500"
+          >
             Home
           </a>
-          <a href="/about" className="text-sm/6 font-semibold text-white">
+          <a
+            href="/about"
+            className="text-sm/6 font-semibold text-white hover:text-yellow-500"
+          >
             About Us
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-white focus:outline-none focus:ring-0">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-white focus:text-yellow-500 focus:outline-none focus:ring-0">
               Our Services
               <ChevronDownIcon
                 aria-hidden="true"
@@ -134,13 +140,13 @@ export default function Navigation() {
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon
                         aria-hidden="true"
-                        className="size-6 text-gray-600 group-hover:text-indigo-600"
+                        className="size-6 text-gray-600 group-hover:text-yellow-500"
                       />
                     </div>
                     <div className="flex-auto">
                       <a
                         href={item.href}
-                        className="block font-semibold text-white"
+                        className="block font-semibold text-gray-500 hover:text-yellow-500"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
@@ -155,7 +161,7 @@ export default function Navigation() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-100"
+                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray hover:bg-yellow-500"
                   >
                     <item.icon
                       aria-hidden="true"
@@ -169,13 +175,16 @@ export default function Navigation() {
           </Popover>
           <a
             href="/contact-sales"
-            className="text-sm/6 font-semibold text-white"
+            className="text-sm/6 font-semibold text-white hover:text-yellow-500"
           >
             Contact Us
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-white">
+          <a
+            href="#"
+            className="text-sm/6 font-semibold text-white hover:text-yellow-500"
+          >
             Get a Quote <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -186,7 +195,7 @@ export default function Navigation() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-gray-900/90 backdrop-blur-sm">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">InitiaDev</span>
@@ -223,7 +232,7 @@ export default function Navigation() {
                   About Us
                 </a>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-gray-500/10">
                     Services
                     <ChevronDownIcon
                       aria-hidden="true"

@@ -26,7 +26,7 @@ export default function Hero() {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
               Announcing our next round of funding.{" "}
-              <a href="#" className="font-semibold text-indigo-400">
+              <a href="#" className="font-semibold text-yellow-500">
                 <span aria-hidden="true" className="absolute inset-0" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
@@ -35,8 +35,8 @@ export default function Hero() {
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
               Your Business Needs a{" "}
-              <span className="text-indigo-600">Website That</span> Actually{" "}
-              <span className="text-indigo-600">Works</span>
+              <span className="text-yellow-600">Website That</span> Actually{" "}
+              <span className="text-yellow-600">Works</span>
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
               Your business deserves more than just a website. I build websites
@@ -46,11 +46,14 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="rounded-md bg-yellow-500 hover:bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-gray shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Get started
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-white">
+              <a
+                href="#"
+                className="text-sm/6 font-semibold text-white hover:text-yellow-500"
+              >
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
