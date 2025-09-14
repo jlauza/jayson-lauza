@@ -80,7 +80,7 @@ export default function Navigation() {
     <header className="bg-gray-900/90 backdrop-blur-sm fixed w-full z-50">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6"
+        className="mx-auto flex max-w-full items-center justify-between p-6"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -129,29 +129,29 @@ export default function Navigation() {
 
             <PopoverPanel
               transition
-              className="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white ring-1 shadow-lg ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+              className="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl ring-1 shadow-lg ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in bg-gray-800/90 backdrop-blur-sm"
             >
               <div className="p-4">
                 {services.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-900"
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-800/90 group-hover:bg-gray-900">
                       <item.icon
                         aria-hidden="true"
-                        className="size-6 text-gray-600 group-hover:text-yellow-500"
+                        className="size-6 text-gray-600 group-hover:text-yellow-500 bg-gray-800/90"
                       />
                     </div>
                     <div className="flex-auto">
                       <a
                         href={item.href}
-                        className="block font-semibold text-gray-500 hover:text-yellow-500"
+                        className="block font-semibold text-gray-300 hover:text-yellow-500"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
+                      <p className="mt-1 text-gray-300">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -161,11 +161,11 @@ export default function Navigation() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray hover:bg-yellow-500"
+                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-50 bg-gray-800/90 backdrop-blur-sm hover:bg-yellow-500 hover:text-gray-800/90"
                   >
                     <item.icon
                       aria-hidden="true"
-                      className="size-5 flex-none text-gray-400"
+                      className="size-5 flex-none group-hover:text-gray-800/90"
                     />
                     {item.name}
                   </a>
