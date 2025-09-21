@@ -8,7 +8,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[url('/hero-background.png')] bg-cover bg-center">
+    <div className="relative min-h-screen bg-[url('')] bg-cover bg-center">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-gray-800/80 to-black/90" />
 
