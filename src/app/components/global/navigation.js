@@ -89,7 +89,7 @@ export default function Navigation() {
               alt="Logo"
               src="/initiadev-logo-white.png"
               className="h-5 w-auto"
-              width={1001}
+              width={1200}
               height={150}
             />
           </a>
