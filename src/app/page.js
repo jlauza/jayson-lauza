@@ -10,6 +10,7 @@ import Services from "./components/services";
 import Brands from "./components/brands";
 import Solutions from "./components/solutions";
 import Hero from "./components/hero";
+import ServicesGrid from "./components/global/service-grid";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navigation />
       {/* Hero */}
       <Hero />
+      <ServicesGrid />
 
       {/* <div id="hero" className="relative isolate px-4 pt-6 lg:px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center max-w-7xl mx-auto py-16 sm:py-24 lg:py-28">
