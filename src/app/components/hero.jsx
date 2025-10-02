@@ -41,13 +41,13 @@ export default function Hero() {
                 href="#"
                 className="rounded-md bg-yellow-500 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow hover:bg-yellow-400"
               >
-                Get started
+                How It Works
               </a>
               <a
                 href="#"
                 className="px-3.5 py-2.5 text-sm font-semibold text-white hover:text-yellow-500"
               >
-                Learn more →
+                Download Brochure →
               </a>
             </div>
           </BlurFade>
